@@ -19,10 +19,6 @@ artwork using ~oF0.9.3 and ofxOsc
 ```
 class ofApp : public ofBaseApp {
     ofxCrushAppsUsingOfxOsc destroyer;
-public:
-    void setup() {
-        destroyer.setup("127.0.0.1");
-    }
 };
 ```
 

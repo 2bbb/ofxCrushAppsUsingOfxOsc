@@ -19,10 +19,16 @@ class ofxCrushAppsUsingOfxOsc {
         return (ofGetFrameNum() * 256) % 65536;
     }
 public:
-    void setup(const std::string &address) {
-        this->address = address;
+    ofxCrushAppsUsingOfxOsc()
+    : address("255.255.255.255")
+    {
         ofAddListener(ofEvents().update, this, &ofxCrushAppsUsingOfxOsc::update);
         manager.Create();
+        manager.SetEnableBroadcast(true);
+    }
+    
+    void setup(const std::string &address = "255.255.255.255") {
+        this->address = address;
     }
     void update(ofEventArgs &) {
         int offset = portOffset();
