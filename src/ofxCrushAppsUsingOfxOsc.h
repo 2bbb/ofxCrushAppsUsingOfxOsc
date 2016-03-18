@@ -1,17 +1,17 @@
 //
-//  ofxDestoryAppsUsingOfxOsc.h
+//  ofxCrushAppsUsingOfxOsc.h
 //
 //  Created by ISHII 2bit on 2016/03/18.
 //
 //
 
-#ifndef ofxDestoryAppsUsingOfxOsc_h
-#define ofxDestoryAppsUsingOfxOsc_h
+#ifndef ofxCrushAppsUsingOfxOsc_h
+#define ofxCrushAppsUsingOfxOsc_h
 
 #include "ofMain.h"
 #include "ofxUDPManager.h"
 
-class ofxDestoryAppsUsingOfxOsc {
+class ofxCrushAppsUsingOfxOsc {
     ofxUDPManager manager;
     std::string address;
     
@@ -21,7 +21,7 @@ class ofxDestoryAppsUsingOfxOsc {
 public:
     void setup(const std::string &address) {
         this->address = address;
-        ofAddListener(ofEvents().update, this, &ofxDestoryAppsUsingOfxOsc::update);
+        ofAddListener(ofEvents().update, this, &ofxCrushAppsUsingOfxOsc::update);
         manager.Create();
     }
     void update(ofEventArgs &) {
@@ -36,4 +36,4 @@ public:
     }
 };
 
-#endif /* ofxDestoryAppsUsingOfxOsc_h */
+#endif /* ofxCrushAppsUsingOfxOsc_h */
