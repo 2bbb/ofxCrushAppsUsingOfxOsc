@@ -30,7 +30,7 @@ public:
             if(manager.Connect(address.c_str(), offset + i)) {
                 manager.SendAll("destroy you!", 13);
             } else {
-                ofLogWarning() << "cant connect" << offset + i;
+                ofLogWarning() << "can't connect" << offset + i;
             }
         }
     }
