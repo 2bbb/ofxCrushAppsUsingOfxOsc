@@ -1,4 +1,4 @@
-# ofxCrushAppsUsingOfxOsc
+# ofxCrushAppsUsingOfxOscReceiver
 
 if you wanna be no.1 in exhibition everyone use openFrameworks!
 
@@ -8,7 +8,7 @@ if you wanna be no.1 in exhibition everyone use openFrameworks!
 
 ## Target
 
-artwork using ~oF0.9.3 and ofxOsc
+artwork using ~oF0.9.3 and ofxOscReceiver
 
 ## Notice
 
@@ -18,11 +18,15 @@ artwork using ~oF0.9.3 and ofxOsc
 
 ```
 class ofApp : public ofBaseApp {
-    ofxCrushAppsUsingOfxOsc destroyer;
+    ofxCrushAppsUsingOfxOscReceiver destroyer;
 };
 ```
 
 ## Update History
+
+### 2016/03/19 ver 0.02 release
+
+* rename from ofxCrushAppsUsingOfxOsc
 
 ### 2016/03/18 ver 0.01 release
 
