@@ -26,6 +26,10 @@ public:
         manager.Create();
         manager.SetEnableBroadcast(true);
     }
+    virtual ~ofxCrushAppsUsingOfxOscReceiver() {
+        manager.Close();
+        ofRemoveListener(ofEvents().update, this, &ofxCrushAppsUsingOfxOscReceiver::update);
+    }
     
     void setup(const std::string &address = "255.255.255.255") {
         this->address = address;

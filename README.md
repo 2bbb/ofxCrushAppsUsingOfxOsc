@@ -24,6 +24,10 @@ class ofApp : public ofBaseApp {
 
 ## Update History
 
+### 2016/03/20 ver 0.03 release
+
+* add destructor
+
 ### 2016/03/19 ver 0.02 release
 
 * rename from ofxCrushAppsUsingOfxOsc
