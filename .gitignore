@@ -1,28 +1,91 @@
-### https://raw.github.com/github/gitignore/1c24a55ec3de6539e1ab4d082e78123541eac53c/Global/OSX.gitignore
+#########################
+# general
+#########################
 
-.DS_Store
+[Bb]in/
+[Bb]uild/
+[Oo]bj/
+*.o
+[Dd]ebug*/
+[Rr]elease*/
+*.mode*
+*.app/
+*.pyc
+.svn/
+*.log
+*.cpp.eep
+*.cpp.elf
+*.cpp.hex
+
+#########################
+# IDE
+#########################
+
+# XCode
+*.pbxuser
+*.perspective
+*.perspectivev3
+*.mode1v3
+*.mode2v3
+# XCode 4
+xcuserdata
+*.xcworkspace
+
+# Code::Blocks
+*.depend
+*.layout
+
+# Visual Studio
+*.sdf
+*.opensdf
+*.suo
+*.pdb
+*.ilk
+*.aps
+*.user
+*.userosscache
+*.sln.docstates
+ipch/
+
+# Eclipse
+.metadata
+local.properties
+.externalToolBuilders
+
+#########################
+# operating system
+#########################
+
+# Linux
+*~
+# KDE
+.directory
 .AppleDouble
-.LSOverride
 
-# Icon must end with two \r
-Icon
-
+# OSX
+.DS_Store
+*.swp
+*~.nib
 # Thumbnails
 ._*
 
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
+# Windows
+# Windows image file caches
+Thumbs.db
+# Folder config file
+Desktop.ini
 
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+# Android
+.csettings
+/libs/openFrameworksCompiled/project/android/paths.make
+
+# Android Studio
+*.iml
+
+#########################
+# miscellaneous
+#########################
+
+.mailmap
 
 
