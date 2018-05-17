@@ -8,7 +8,7 @@ if you wanna be no.1 in exhibition everyone use openFrameworks!
 
 ## Target
 
-artwork using ~oF0.9.3 and ofxOscReceiver
+artwork using ~oF0.9.8 and ofxOscReceiver
 
 ## Notice
 
